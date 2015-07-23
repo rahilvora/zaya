@@ -1,0 +1,7 @@
+<div>
+	<h1>Add Points</h1>
+  <select class="form-control" ng-model="add.student" ng-options="student as student.name for student in students"></select>
+  <select class="form-control" ng-model="add.behaviour" ng-options="behaviour as behaviour.name for behaviour in behaviours"></select>
+  <button type="submit" ng-click="addpoint()" class="btn btn-default">Submit</button>
+
+</div>

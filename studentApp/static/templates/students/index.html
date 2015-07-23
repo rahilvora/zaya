@@ -1,0 +1,25 @@
+<div>
+	
+	<h1> {{ students.length }} students found.</h1>
+
+	<table class="table table-bordered table-striped">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Class</th>
+			<th>Total points</th>
+			<th>Last attendance</th>
+
+		</tr>
+		<tr ng-repeat="student in students">
+			<td> {{student.student_id}} </td>
+			<td> {{student.name}} </td>
+			<td> {{student.age}} </td>
+			<td> {{student.student_class}} </td>
+			<td> {{student.points}}</td>
+			<td>{{student.lastDate}}</td>
+		</tr>
+	</table>
+	
+</div>

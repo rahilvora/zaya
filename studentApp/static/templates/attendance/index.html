@@ -1,0 +1,18 @@
+<div>
+	
+	<h1>List of Attendance</h1>
+
+	<table class="table table-bordered table-striped">
+		<tr>
+			<th>Student Name</th>
+			<th>Date</th>
+			<th>Time</th>
+		</tr>
+		<tr ng-repeat="a in attendance">
+			<td> {{a.student.name}} </td>
+			<td> {{a.date}} </td>
+			<td> {{a.time}} </td>
+		</tr>
+	</table>
+	
+</div>

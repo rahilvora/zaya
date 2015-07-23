@@ -1,0 +1,19 @@
+<div>
+	
+	<h1>{{ points.length }} points assigned.</h1>
+
+	<table class="table table-bordered table-striped">
+		<tr>
+			<th>Student Name</th>
+			<th>Behaviour</th>
+			<th>Point</th>
+			
+		</tr>
+		<tr ng-repeat="p in points">
+			<td> {{p.student.name}} </td>
+			<td> {{p.behaviour.name}} </td>
+			<td> {{p.behaviour.points}} </td>	
+		</tr>
+	</table>
+	
+</div>

@@ -1,0 +1,27 @@
+<div>
+	
+	<h1>Add Student</h1>
+
+<form>
+  <div class="form-group">
+    <label for="studentID">Student ID:</label>
+    <input type="text" ng-model="add.student_id" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Name</label>
+    <input type="text" ng-model="add.student_name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Age</label>
+    <input type="number" ng-model="add.student_age" class="form-control">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Class</label>
+    <input type="text" ng-model="add.student_class" class="form-control" >
+  </div>  
+  
+  <button type="submit" ng-click="addstudent()" class="btn btn-default">Submit</button>
+</form>
+	
+</div>
