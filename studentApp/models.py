@@ -38,13 +38,3 @@ class Point(models.Model):
 			attendance = Attendance(student = self.student)
 			attendance.save()
 		super(Point,self).save(*args,**kwargs)
-
-
-
-    
-'''
-Table 1: User Account ( student_id, Name, Age, Class) 
-Table 2: Attendance ( id, student_id, Date, Time)
-Table 3: Points: ( id, student_id, points) ( you can assume 3 sets of points for each behavior)
-Table 4: Behavior  ( id, Behaviour Name, Points )  { [1, Doing homework, 3],[2, Disrupting class, -2], [ 3, helping, 5] }
-'''
